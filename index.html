@@ -5,16 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
 
   <header>
-
+    <h1>Welcome to the Listening Room!</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Results</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-
+    <p>Take this quiz for a curated playlist of songs that match your current vibe!</p>
+    <div id="questions">
+      <div id="questionnaire">
+        <p id="question"></p>
+        <img src="https://place-hold.it/300x375/ddd"> <!-- Place holder for html wireframe, remove when JS is written for line 31 -->
+        <!-- <img id="image1" onclick="selectImage(1)" alt="Image 1"> -->
+        <img src="https://place-hold.it/300x375/ddd"> <!-- Place holder for html wireframe, remove when JS is written for line 33 -->
+        <!-- <img id="image2" onclick="selectImage(2)" alt="Image 2"> -->
+      </div>
+      <button onclick="nextQuestion()">Next Question</button>
+    </div>
 
   </main>
   <footer>
