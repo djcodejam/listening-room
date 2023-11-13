@@ -66,9 +66,9 @@
     {
       "id": "pointer:pointer",
       "typeName": "pointer",
-      "x": 387,
-      "y": 346,
-      "lastActivityTimestamp": 1699900457979,
+      "x": 567,
+      "y": 82,
+      "lastActivityTimestamp": 1699901316943,
       "meta": {}
     },
     {
@@ -3467,6 +3467,29 @@
       },
       "parentId": "page:page",
       "index": "an",
+      "typeName": "shape"
+    },
+    {
+      "x": 1916,
+      "y": 1036,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:iX6CzZac0tIxkq04Z2ug4",
+      "type": "text",
+      "props": {
+        "color": "black",
+        "size": "m",
+        "w": 384,
+        "text": "as mvp the playlist would be in text",
+        "font": "draw",
+        "align": "start",
+        "autoSize": false,
+        "scale": 1
+      },
+      "parentId": "page:page",
+      "index": "ao",
       "typeName": "shape"
     }
   ]
