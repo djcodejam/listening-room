@@ -1,4 +1,39 @@
 * {
-  background-color: blue;
+  background-color: #2779a7;
   color: white;
+}
+
+h1 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding: 0.25em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
 }
