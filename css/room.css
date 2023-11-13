@@ -1,0 +1,68 @@
+* {
+  background-color: #2779a7;
+  color: white;
+}
+
+h1 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding: 0.25em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0; /* Fix: Comma changed to space for proper padding */
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.column {
+  float: left;
+  width: 10%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
