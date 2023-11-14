@@ -84,6 +84,23 @@ img {
   background-image: url(cozy-room.png);
   background-size: cover;
   background-position: center;
-  position: relative;
-  opacity: 70%;
+  position: relative; /* Change to relative instead of absolute */
+  opacity: 50%;
 }
+
+img.overlay-1,
+img.overlay-2 {
+  position: absolute;
+  top: 60%; /* Adjust the top position to center vertically */
+  transform: translate(-50%, -50%); /* Center horizontally */
+  z-index: 1;
+}
+
+img.overlay-1 {
+  left: 30%; /* Adjust the left position for the first image */
+}
+
+img.overlay-2 {
+  left: 70%; /* Adjust the left position for the second image */
+}
+
