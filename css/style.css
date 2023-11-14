@@ -52,6 +52,13 @@ img {
   position: absolute;
   top: 30%;
   text-align: left;
+  background-color: transparent;
+}
+
+.left-col,
+.right-col {
+  background-color: transparent;
+  padding: 20px;
 }
 
 .left-col {
@@ -64,6 +71,7 @@ img {
   font-size: 3em;
   color: #fff;
   line-height: 2;
+  background-color: transparent;
 }
 
 .right-col {
@@ -74,8 +82,14 @@ img {
   align-items: center;
 }
 
-.right-col p {
-  font-size: 1.5em;
+.right-col a {
+  background-color: transparent;
+}
+
+.right-col img {
+  max-width: 100%;
+  height: auto;
+  background-color: transparent;
 }
 
 .room {
@@ -85,7 +99,21 @@ img {
   background-size: cover;
   background-position: center;
   position: relative; /* Change to relative instead of absolute */
-  opacity: 50%;
+  opacity: 75%;
+}
+
+.room p {
+  position: absolute;
+  z-index: 2; /* Increase z-index to place it above the videos */
+  top: 20%; /* Adjust the top position to center vertically */
+  left: 50%; /* Adjust the left position to center horizontally */
+  transform: translate(-50%, -50%);
+  font-size: 2.25em;
+  background-color: transparent;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  filter: brightness(1.9);
 }
 
 video.overlay-1,
@@ -94,6 +122,7 @@ video.overlay-2 {
   top: 60%; /* Adjust the top position to center vertically */
   transform: translate(-50%, -50%); /* Center horizontally */
   z-index: 1;
+  background-color: transparent;
 }
 
 video.overlay-1 {
@@ -104,3 +133,32 @@ video.overlay-2 {
   left: 70%; /* Adjust the left position for the second image */
 }
 
+#click1,
+#click2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.25em;
+}
+
+#click1 {
+  left: 30%;
+}
+
+#click2 {
+  left: 70%;
+}
+
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #409451;
+  color: white;
+}
