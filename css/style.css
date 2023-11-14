@@ -95,6 +95,11 @@ img {
   left: 50%; /* Adjust the left position to center horizontally */
   transform: translate(-50%, -50%);
   font-size: 2.25em;
+  background-color: transparent;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  filter: brightness(1.9);
 }
 
 video.overlay-1,
@@ -103,6 +108,7 @@ video.overlay-2 {
   top: 60%; /* Adjust the top position to center vertically */
   transform: translate(-50%, -50%); /* Center horizontally */
   z-index: 1;
+  background-color: transparent;
 }
 
 video.overlay-1 {
@@ -113,3 +119,32 @@ video.overlay-2 {
   left: 70%; /* Adjust the left position for the second image */
 }
 
+#click1,
+#click2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.25em;
+}
+
+#click1 {
+  left: 30%;
+}
+
+#click2 {
+  left: 70%;
+}
+
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #c8c33e;
+  color: white;
+}
