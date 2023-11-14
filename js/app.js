@@ -1,11 +1,14 @@
 
+// this is where we target the container that holds the video tags
 const videoContainer = document.getElementById('videos');
 
 //these are the video tags that we are targeting
 const vid1 = document.querySelector('#videos div:first-child video');
 const vid2 = document.querySelector('#videos div:nth-child(2) video');
 
+//this is the array that stores the user selected videos
 let userChoiceVideos = [];
+
 
 let state = {
   clicksSoFar: 0,
@@ -13,6 +16,7 @@ let state = {
   allBPMvids: [],
 };
 
+//This is the constructor for our Video/Options/Song
 function BPMvids(name, link, type, song){
   this.name = name;
   this.link = link;
@@ -21,14 +25,17 @@ function BPMvids(name, link, type, song){
   state.allBPMvids.push(this);
 }
 
-let bpmCopy = state.allBPMvids;
+new BPMvids('ca1', 'chris-videos/ca-discolights-medfast.mp4', 'mp4', 'Michael Jackson - Billie Jean');
+new BPMvids('ca2', 'chris-videos/ca-mansillouete-slowmed.mp4', 'mp4', 'System of a Down - Lonely Day');
+new BPMvids('ca-3', 'chris-videos/ca-neonretro-med.mp4', 'mp4', 'Kotvsky86 - Never Change the Way');
+new BPMvids('ca-4', 'chris-videos/ca-redyellow-fast.mp4', 'mp4', 'Rage Against the Machine - Testify');
+new BPMvids('ca-5', 'chris-videos/ca-yellowdiscoball-medfast.mp4', 'mp4', 'Mac Miller - Whats the Use');
 
-new BPMvids('abstract', 'videos/abstract1.mp4', 'mp4', 'songName artist');
-new BPMvids('iguana', 'videos/iguana.mp4', 'mp4', 'songName2 artist2');
-new BPMvids('lights-abstract', 'videos/lights-abstract.mp4', 'mp4', 'songName3 artist3');
-new BPMvids('octagon', 'videos/octagon.mp4', 'mp4', 'songName2 artist2');
-new BPMvids('book', 'videos/test.mp4', 'mp4', 'songName2 artist2');
+//This is the array that holds a copy of the original array so that when the splice method in the
+//renderBPMVideos function removes an item from the original, we still have a copy.
+let bpmCopy = [...state.allBPMvids];
 
+//This is the function that renders the videos on the page. **Note: this looks a lot like odd-duck
 function renderBpmVideos(){
 
   function randomVid(){
@@ -39,8 +46,6 @@ function renderBpmVideos(){
     const randomIndex = Math.floor(Math.random() * state.allBPMvids.length);
     const selectedVideo = state.allBPMvids[randomIndex];
     state.allBPMvids.splice(randomIndex, 1);
-    userChoiceVideos.push(selectedVideo);
-    console.log(userChoiceVideos);
     return selectedVideo;
   }
 
@@ -48,51 +53,39 @@ function renderBpmVideos(){
   let video2 = randomVid();
 
   vid1.src = video1.link;
+  vid1.name = video1.name;
+  vid1.song = video1.song;
   vid1.type = video1.type;
 
   vid2.src = video2.link;
+  vid2.song = video2.song;
+  vid2.name = video2.name;
   vid2.type = video2.type;
 }
-// let video1 = randomVid();
-// // alreadyUsedVideos.push(video1);
-// let video2 = randomVid();
 
-// while (video2 === video1){
-//   video2 = randomVid();
-// }
-
-// vid1.src = state.allBPMvids[video1].link;
-// vid1.type = state.allBPMvids[video1].type;
-
-// vid2.src = state.allBPMvids[video2].link;
-// vid2.type = state.allBPMvids[video2].type;
-
-
-
-
-
-
-
-// function eventListeners(){
+//This is the event listener for the videos. ** Note that it is not in a function so it adds the event
+// listener on page load without it being called
 videoContainer.addEventListener('click', handleClick);
-// }
+
+// This is the function to handle the click event for videoContainer
 function handleClick(event){
   event.preventDefault();
-  let userChoice= event.target.src;
-  for (let i = 0; i < state.allBPMvids.length; i++) {
-    if (userChoice === state.allBPMvids[i].src){
+  let userChoice= event.target.song;
+  console.log('user choice', userChoice);
+
+  //This for loop, loops through the entire bpmCopy array and sets userChoice and sends it to the
+  //userChoiceVideos array
+  for (let i = 0; i < bpmCopy.length; i++) {
+    if (userChoice === bpmCopy[i].song){
       userChoiceVideos.push(userChoice);
+      console.log('the whole user choice array', userChoiceVideos);
+      break;
     }
   }
-  console.log('second iteration', userChoiceVideos);
-  // console.log('inside event handle click function');
-  // console.log(event);
-  // let bpmVideoChoice = event.target.name;
-  // console.log(bpmVideoChoice);
-
 
   state.clicksSoFar++;
 
+  //This stops the event listener once the user clicks 5 times
   if(state.clicksSoFar >= state.clicksAllowed){
     removeEventListener();
   } else {
@@ -104,7 +97,6 @@ function removeEventListener(){
   videoContainer.removeEventListener('click', handleClick);
 }
 
-// eventListeners();
 renderBpmVideos();
 
 
