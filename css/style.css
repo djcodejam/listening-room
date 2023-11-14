@@ -68,10 +68,22 @@ img {
 }
 
 .left-col h2 {
+  background-color: transparent;
   font-size: 3em;
   color: #fff;
   line-height: 2;
-  background-color: transparent;
+  line-height: 2;
+  opacity: 0;
+  animation: fadeInOut 4s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .right-col {
