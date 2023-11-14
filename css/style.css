@@ -85,15 +85,16 @@ img {
   background-size: cover;
   background-position: center;
   position: relative; /* Change to relative instead of absolute */
-  opacity: 50%;
+  opacity: 75%;
 }
 
 .room p {
   position: absolute;
-  z-index: 1;
-  top: 15%;
-  font-size: 2.5em;
-  left: 50%;
+  z-index: 2; /* Increase z-index to place it above the videos */
+  top: 20%; /* Adjust the top position to center vertically */
+  left: 50%; /* Adjust the left position to center horizontally */
+  transform: translate(-50%, -50%);
+  font-size: 2.25em;
 }
 
 video.overlay-1,
