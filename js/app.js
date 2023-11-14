@@ -27,7 +27,6 @@ function BPMvids(name, link, type, song){
 
 new BPMvids('ca1', 'chris-videos/ca-discolights-medfast.mp4', 'mp4', 'Michael Jackson - Billie Jean');
 new BPMvids('ca2', 'chris-videos/ca-mansillouete-slowmed.mp4', 'mp4', 'System of a Down - Lonely Day');
-new BPMvids('ca-3', 'chris-videos/ca-neonretro-med.mp4', 'mp4', 'Kotvsky86 - Never Change the Way');
 new BPMvids('ca-4', 'chris-videos/ca-redyellow-fast.mp4', 'mp4', 'Rage Against the Machine - Testify');
 new BPMvids('ca-5', 'chris-videos/ca-yellowdiscoball-medfast.mp4', 'mp4', 'Mac Miller - Whats the Use');
 
