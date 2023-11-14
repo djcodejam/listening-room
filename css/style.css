@@ -52,6 +52,13 @@ img {
   position: absolute;
   top: 30%;
   text-align: left;
+  background-color: transparent;
+}
+
+.left-col,
+.right-col {
+  background-color: transparent;
+  padding: 20px;
 }
 
 .left-col {
@@ -64,6 +71,7 @@ img {
   font-size: 3em;
   color: #fff;
   line-height: 2;
+  background-color: transparent;
 }
 
 .right-col {
@@ -74,8 +82,14 @@ img {
   align-items: center;
 }
 
-.right-col p {
-  font-size: 1.5em;
+.right-col a {
+  background-color: transparent;
+}
+
+.right-col img {
+  max-width: 100%;
+  height: auto;
+  background-color: transparent;
 }
 
 .room {
