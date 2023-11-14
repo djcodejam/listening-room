@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/room.css">
+    <title>Listening Room</title>
+
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="room.html">App</a></li>
+      <li><a href="listening.html">Listening Room</a></li>
+    </ul>
+  </nav>
+  <div style="text-align:center">
+    <h2>Welcome to Your Listening Room</h2>
+    <p>Choose a listening environment for your experience:</p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images/Listening1.jpg" alt="HiFi" style="width:100%" onclick="changeBackground(this);">
+    </div>
+    <div class="column">
+      <img src="images/Listening2.jpg" alt="Minimal" style="width:100%" onclick="changeBackground(this);">
+    </div>
+    <div class="column">
+      <img src="images/Listening3.jpg" alt="Plants" style="width:100%" onclick="changeBackground(this);">
+    </div>
+    <div class="column">
+      <img src="images/Listening4.jpg" alt="Modern" style="width:100%" onclick="changeBackground(this);">
+    </div>
+    <div class="column">
+      <img src="images/Listening5.JPG" alt="Space" style="width:100%" onclick="changeBackground(this);">
+    </div>
+    <div class="column">
+      <img src="images/Listening 6.jpg" alt="Blue" style="width:100%" onclick="changeBackground(this);">
+    </div>
+    <div class="column">
+      <img src="images/Listening7.jpg" alt="Amps" style="width:100%" onclick="changeBackground(this);">
+    </div>
+    <div class="column">
+      <img src="images/Listening8.jpg" alt="Fort" style="width:100%" onclick="changeBackground(this);">
+    </div>
+  </div>
+
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+
+<script src="js/room.js"></script>
+</body>
+
+
+
+</body>
+<footer>
+
+</footer>
+</html>
