@@ -117,6 +117,7 @@ function handleClick(event){
 
   //This stops the event listener once the user clicks 5 times
   if(state.clicksSoFar === state.clicksAllowed){
+    redirectToListeningRoom();
     removeEventListener();
     renderResults();
   } else {
@@ -142,6 +143,11 @@ function renderResults() {
     localStorage.setItem('userChoiceItemKey', jsonString);
   }
 
+}
+
+function redirectToListeningRoom(){
+  const host = window.location.host ;
+  window.location.href = `http://${host}/listening.html`;
 }
 
 
