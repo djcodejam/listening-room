@@ -134,6 +134,7 @@ function renderResults() {
     let jsonString = JSON.stringify(userChoiceVideos);
     localStorage.setItem('userChoiceItemKey', jsonString);
   }
+
 }
 
 
