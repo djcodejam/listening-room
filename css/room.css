@@ -4,15 +4,16 @@
 }
 
 h2 {
+  color: #d18466;
   font-family: 'Righteous', sans-serif;
   font-size: 1.5em;
-  padding: 0.25em;
+  padding: 0.5em;
 }
 
 p {
   font-family: 'Righteous', sans-serif;
   font-size: 0.9em;
-  padding: 0.25em;
+  padding: 0.5em;
 }
 
 body {
@@ -72,7 +73,6 @@ body {
   opacity: 10;
 }
 
-
 .row:after {
   content: "";
   display: table;
@@ -107,11 +107,11 @@ button {
 
 
 #consolePlaylist button {
-  background-color: #409451;
-  color: white;
+  background-color: #3b4c5a;
+  color: #d3c7b4;
   margin-left: 10px;
 }
 
 #consolePlaylist button:hover {
-  background-color: #409451;
+  background-color: #712404;
 }

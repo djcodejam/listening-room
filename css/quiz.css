@@ -4,24 +4,9 @@
   #d3c7b4;
 }
 
-h1 {
-  color: #d3c7b4
-  font-family: 'Righteous', sans-serif;
-  font-size: 2em;
-  padding: 0.25em;
-}
-
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 20px;
-  cursor: pointer;
 }
 
 .navbar {
@@ -57,90 +42,7 @@ img {
   background-color: transparent;
 }
 
-.left-col,
-.right-col {
-  background-color: transparent;
-  padding: 20px;
-}
-
-.left-col {
-  animation: fadeInOut 8s infinite;
-  border-radius: 10px;
-  float: left;
-  width: 50%;
-  margin-left: 200px;
-}
-
-.left-col h2 {
-  /* animation: fadeInOut 8s infinite; */
-  border-radius: 10px;
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #d3c7b4;
-  line-height: 2;
-}
-
-#relax {
-  animation-delay: 0s;
-  border-radius: 10px;
-  opacity: 95%;
-  padding-left: 20px;
-}
-
-#take {
-  animation-delay: 2s;
-  border-radius: 10px;
-  opacity: 95%;
-  padding-left: 20px;
-}
-
-#enjoy {
-  animation-delay: 4s;
-  border-radius: 10px;
-  opacity: 95%;
-  padding-left: 20px;
-}
-
-
-@keyframes fadeInOut {
-  0%, 100% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-}
-
-.right-col {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 100px;
-}
-
-.right-col a {
-  background-color: transparent;
-}
-
-.right-col img {
-  max-width: 100%;
-  height: auto;
-  background-color: transparent;
-}
-
-/* .room {
-  height: 100vh;
-  width: 100%;
-  background-image: url(cozy-room.png);
-  background-size: cover;
-  background-position: center;
-  position: relative; /* Change to relative instead of absolute */
-  /* opacity: 75%;
-} */ */
-
-.room p {
+.room h1 {
   position: absolute;
   z-index: 2; /* Increase z-index to place it above the videos */
   top: 20%; /* Adjust the top position to center vertically */
@@ -148,10 +50,9 @@ img {
   transform: translate(-50%, -50%);
   font-size: 2.25em;
   background-color: transparent;
-  color: #FFFFFF;
+  color:  #d18466;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: bold;
-  filter: brightness(1.9);
 }
 
 video.overlay-1,
@@ -198,5 +99,9 @@ button {
   text-decoration: none;
   border-radius: 10px;
   background-color: #3b4c5a;
-  color: white;
+  color: #d3c7b4;
+}
+
+button:hover {
+  background-color: #712404;
 }
