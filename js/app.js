@@ -125,6 +125,9 @@ function renderResults() {
     let songList = document.createElement('li');
     playlist.appendChild(songList);
     songList.textContent = userChoiceVideos[i];
+
+    let jsonString = JSON.stringify(userChoiceVideos);
+    localStorage.setItem('userChoiceItemKey', jsonString);
   }
 }
 
