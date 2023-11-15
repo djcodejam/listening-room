@@ -28,8 +28,7 @@ function renderSongsListeningRoom() {
     let containerDiv = document.createElement('div');
     // Add class ID for styling later
     containerDiv.classList.add('playlist-item');
-
-
+    // Used span so the song and button are inline
     let songList = document.createElement('span');
     let playButton = document.createElement('button');
     playButton.textContent = 'Play Song';
