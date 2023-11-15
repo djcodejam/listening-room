@@ -5,7 +5,7 @@
 }
 
 h1 {
-  color: #d3c7b4
+  color: #f3a282
   font-family: 'Righteous', sans-serif;
   font-size: 2em;
   padding: 0.25em;
@@ -187,16 +187,4 @@ video.overlay-2 {
 
 #click2 {
   left: 70%;
-}
-
-
-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1em;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 10px;
-  background-color: #3b4c5a;
-  color: white;
 }
