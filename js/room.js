@@ -16,34 +16,42 @@ let storedArray = JSON.parse(storedJsonString);
 console.log(storedArray);
 
 
-function appendToConsole(playlist) {
-  let logTextarea = document.getElementById('consoleLogs');
+function renderSongsListeningRoom() {
+  let songsContainer = document.getElementById('consolePlaylist');
+  let playlist = document.createElement('ul');
+  songsContainer.appendChild(playlist);
 
-  // Check if the message is an object and stringify it
-  if (typeof playlist === 'object') {
-    playlist = JSON && JSON.stringify ? JSON.stringify(playlist) : playlist;
+  for (let i = 0; i < storedArray.length; i++) {
+    let songList = document.createElement('li');
+    playlist.appendChild(songList);
+    songList.textContent = storedArray[i];
   }
 
-  // Append the message to the textarea
-  logTextarea.value += playlist + '\n';
+  // // Check if the message is an object and stringify it
+  // if (typeof playlist === 'object') {
+  //   playlist = JSON && JSON.stringify ? JSON.stringify(playlist) : playlist;
+  // }
+
+  // // Append the message to the textarea
+  // logTextarea.value += playlist + '\n';
 }
 
 // Store the original console.log function
-let originalConsoleLog = console.log;
+// let originalConsoleLog = console.log;
 
-// Override console.log to display messages in the textarea
-console.log = function () {
-  for (let i = 0; i < arguments.length; i++) {
-    appendToConsole(arguments[i]);
-  }
+// // Override console.log to display messages in the textarea
+// console.log = function () {
+//   for (let i = 0; i < arguments.length; i++) {
+//     appendToConsole(arguments[i]);
+//   }
 
-  // Call the original console.log function to output messages to the browser console
-  if (typeof originalConsoleLog === 'function') {
-    originalConsoleLog.apply(console, arguments);
-  }
-  console.log(storedArray);
+//   // Call the original console.log function to output messages to the browser console
+//   if (typeof originalConsoleLog === 'function') {
+//     originalConsoleLog.apply(console, arguments);
+//   }
+//   console.log(storedArray);
+renderSongsListeningRoom();
 
-};
 
 
 
