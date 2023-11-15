@@ -1,13 +1,12 @@
 
 // this is where we target the container that holds the video tags
-const videoContainer = document.getElementById('videos');
+
 
 //these are the video tags that we are targeting
 const vid1 = document.querySelector('#videos div:first-child video');
 const vid2 = document.querySelector('#videos div:nth-child(2) video');
 const click1 = document.getElementById('click1');
 const click2 = document.getElementById('click2');
-let resultsContainer = document.getElementById('resultsContainer');
 
 //this is the array that stores the user selected videos
 let userChoiceVideos = [];
@@ -108,6 +107,8 @@ function handleClick(event){
   for (let i = 0; i < bpmCopy.length; i++) {
     if (songAndSpotify.song === bpmCopy[i].song){
       userChoiceVideos.push(songAndSpotify);
+      let jsonString = JSON.stringify(userChoiceVideos);
+      localStorage.setItem('userChoiceItemKey', jsonString);
       console.log('the whole user choice array', userChoiceVideos);
       break;
     }
@@ -119,7 +120,6 @@ function handleClick(event){
   if(state.clicksSoFar === state.clicksAllowed){
     redirectToListeningRoom();
     removeEventListener();
-    renderResults();
   } else {
     renderBpmVideos();
   }
@@ -130,20 +130,6 @@ function removeEventListener(){
   click2.removeEventListener('click', handleClick);
 }
 
-function renderResults() {
-  let playlist = document.createElement('ul');
-  resultsContainer.appendChild(playlist);
-
-  for (let i = 0; i < userChoiceVideos.length; i++) {
-    let songList = document.createElement('li');
-    playlist.appendChild(songList);
-    songList.textContent = userChoiceVideos[i];
-
-    let jsonString = JSON.stringify(userChoiceVideos);
-    localStorage.setItem('userChoiceItemKey', jsonString);
-  }
-
-}
 
 function redirectToListeningRoom(){
   const host = window.location.host ;
