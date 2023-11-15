@@ -42,6 +42,11 @@ new BPMvids('ev2', 'errolvideos/ev-metal-med.mp4', 'mp4', 'Enter Sandman - by Me
 new BPMvids('ev3', 'errolvideos/ev-piano-slow.mp4', 'mp4', '1812 Overture - by Tchaikosky');
 new BPMvids('ev4', 'errolvideos/ev-tunnel-med.mp4', 'mp4', 'Suavemente - by Elvis Crespo');
 new BPMvids('ev5', 'errolvideos/ev-waves-fast.mp4', 'mp4', 'Cool Down - by Kolohe Kai');
+new BPMvids('ns1', 'natalie-videos/ns-aurora-slow.mp4', 'mp4', 'Step Out - Jose Gonzalez');
+new BPMvids('ns2', 'natalie-videos/ns-blue-abstract-med.mp4', 'mp4', 'The Mist - Nine Sparks Riot');
+new BPMvids('ns3', 'natalie-videos/ns-ferris-fast.mp4', 'mp4', 'Float - Janelle Monae');
+new BPMvids('ns4', 'natalie-videos/ns-metro-fast.mp4', 'mp4', 'Whats Up? - FJORA');
+new BPMvids('ns5', 'natalie-videos/ns-watch-slow.mp4', 'mp4', 'Exit Music For a Film - Radiohead');
 
 
 //This is the array that holds a copy of the original array so that when the splice method in the
