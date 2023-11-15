@@ -15,7 +15,7 @@ let userChoiceVideos = [];
 
 let state = {
   clicksSoFar: 0,
-  clicksAllowed: 6,
+  clicksAllowed: 5,
   allBPMvids: [],
 };
 
@@ -28,10 +28,21 @@ function BPMvids(name, link, type, song){
   state.allBPMvids.push(this);
 }
 
-new BPMvids('ca1', 'chris-videos/ca-discolights-medfast.mp4', 'mp4', 'Michael Jackson - Billie Jean');
-new BPMvids('ca2', 'chris-videos/ca-mansillouete-slowmed.mp4', 'mp4', 'System of a Down - Lonely Day');
-new BPMvids('ca-4', 'chris-videos/ca-redyellow-fast.mp4', 'mp4', 'Rage Against the Machine - Testify');
-new BPMvids('ca-5', 'chris-videos/ca-yellowdiscoball-medfast.mp4', 'mp4', 'Mac Miller - Whats the Use');
+new BPMvids('ca1', 'chris-videos/ca-discolights-medfast.mp4', 'mp4', 'Billie Jean by Michael Jackson');
+new BPMvids('ca2', 'chris-videos/ca-mansillouete-slowmed.mp4', 'mp4', 'Lonely Day - by System of a Down');
+new BPMvids('ca-4', 'chris-videos/ca-redyellow-fast.mp4', 'mp4', 'Testify - by Rage Against the Machine');
+new BPMvids('ca-5', 'chris-videos/ca-yellowdiscoball-medfast.mp4', 'mp4', 'Whats the Use - by Mac Miller');
+new BPMvids('lz1', 'lana-videos/lz-blue-waves-med.mp4', 'mp4', 'Way I Go - by Gordi');
+new BPMvids('lz2', 'lana-videos/lz-pink-road-fast.mp4', 'mp4', 'Cosmic Girl - by Jamiroquai');
+new BPMvids('lz3', 'lana-videos/lz-purple-chill-med.mp4', 'mp4', 'Dog Days are Over - by Florence + The Machine');
+new BPMvids('lz4', 'lana-videos/lz-red-dramatic-med.mp4', 'mp4', 'I Need Never Get Old - by Nathaniel Rateliff & The Night Sweats');
+new BPMvids('lz5', 'lana-videos/lz-yellow-spiral-fast.mp4', 'mp4', 'Peaceful Life - by Guts feat. Lorine Chia');
+new BPMvids('ev1', 'errolvideos/ev-colors-med.mp4', 'mp4', 'I Wanna Dance with Somebod - by Whitney Houston');
+new BPMvids('ev2', 'errolvideos/ev-metal-med.mp4', 'mp4', 'Enter Sandman - by Metallica');
+new BPMvids('ev3', 'errolvideos/ev-piano-slow.mp4', 'mp4', '1812 Overture - by Tchaikosky');
+new BPMvids('ev4', 'errolvideos/ev-tunnel-med.mp4', 'mp4', 'Suavemente - by Elvis Crespo');
+new BPMvids('ev5', 'errolvideos/ev-waves-fast.mp4', 'mp4', 'Cool Down - by Kolohe Kai');
+
 
 //This is the array that holds a copy of the original array so that when the splice method in the
 //renderBPMVideos function removes an item from the original, we still have a copy.
