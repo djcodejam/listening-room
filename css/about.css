@@ -30,3 +30,27 @@
 .title {
   color: grey;
 }
+
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0; /* Fix: Comma changed to space for proper padding */
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.25em;
+}
