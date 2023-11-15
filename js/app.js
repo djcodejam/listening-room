@@ -20,33 +20,34 @@ let state = {
 };
 
 //This is the constructor for our Video/Options/Song
-function BPMvids(name, link, type, song){
+function BPMvids(name, link, type, song, spotifySrc){
   this.name = name;
   this.link = link;
   this.song = song;
   this.type = type;
+  this.spotifySrc = spotifySrc;
   state.allBPMvids.push(this);
 }
 
-new BPMvids('ca1', 'chris-videos/ca-discolights-medfast.mp4', 'mp4', 'Billie Jean by Michael Jackson');
-new BPMvids('ca2', 'chris-videos/ca-mansillouete-slowmed.mp4', 'mp4', 'Lonely Day - by System of a Down');
-new BPMvids('ca-4', 'chris-videos/ca-redyellow-fast.mp4', 'mp4', 'Testify - by Rage Against the Machine');
-new BPMvids('ca-5', 'chris-videos/ca-yellowdiscoball-medfast.mp4', 'mp4', 'Whats the Use - by Mac Miller');
-new BPMvids('lz1', 'lana-videos/lz-blue-waves-med.mp4', 'mp4', 'Way I Go - by Gordi');
-new BPMvids('lz2', 'lana-videos/lz-pink-road-fast.mp4', 'mp4', 'Cosmic Girl - by Jamiroquai');
-new BPMvids('lz3', 'lana-videos/lz-purple-chill-med.mp4', 'mp4', 'Dog Days are Over - by Florence + The Machine');
-new BPMvids('lz4', 'lana-videos/lz-red-dramatic-med.mp4', 'mp4', 'I Need Never Get Old - by Nathaniel Rateliff & The Night Sweats');
-new BPMvids('lz5', 'lana-videos/lz-yellow-spiral-fast.mp4', 'mp4', 'Peaceful Life - by Guts feat. Lorine Chia');
-new BPMvids('ev1', 'errolvideos/ev-colors-med.mp4', 'mp4', 'I Wanna Dance with Somebod - by Whitney Houston');
-new BPMvids('ev2', 'errolvideos/ev-metal-med.mp4', 'mp4', 'Enter Sandman - by Metallica');
-new BPMvids('ev3', 'errolvideos/ev-piano-slow.mp4', 'mp4', '1812 Overture - by Tchaikosky');
-new BPMvids('ev4', 'errolvideos/ev-tunnel-med.mp4', 'mp4', 'Suavemente - by Elvis Crespo');
-new BPMvids('ev5', 'errolvideos/ev-waves-fast.mp4', 'mp4', 'Cool Down - by Kolohe Kai');
-new BPMvids('ns1', 'natalie-videos/ns-aurora-slow.mp4', 'mp4', 'Step Out - Jose Gonzalez');
-new BPMvids('ns2', 'natalie-videos/ns-blue-abstract-med.mp4', 'mp4', 'The Mist - Nine Sparks Riot');
-new BPMvids('ns3', 'natalie-videos/ns-ferris-fast.mp4', 'mp4', 'Float - Janelle Monae');
-new BPMvids('ns4', 'natalie-videos/ns-metro-fast.mp4', 'mp4', 'Whats Up? - FJORA');
-new BPMvids('ns5', 'natalie-videos/ns-watch-slow.mp4', 'mp4', 'Exit Music For a Film - Radiohead');
+new BPMvids('ca1', 'chris-videos/ca-discolights-medfast.mp4', 'mp4', 'Billie Jean by Michael Jackson', 'https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5?utm_source=generator');
+new BPMvids('ca2', 'chris-videos/ca-mansillouete-slowmed.mp4', 'mp4', 'Lonely Day - by System of a Down', 'https://open.spotify.com/embed/track/1VNWaY3uNfoeWqb5U8x2QX?utm_source=generator');
+new BPMvids('ca-4', 'chris-videos/ca-redyellow-fast.mp4', 'mp4', 'Testify - by Rage Against the Machine', 'https://open.spotify.com/embed/track/7lmeHLHBe4nmXzuXc0HDjk?utm_source=generator');
+new BPMvids('ca-5', 'chris-videos/ca-yellowdiscoball-medfast.mp4', 'mp4', 'Whats the Use - by Mac Miller', 'https://open.spotify.com/embed/track/2dgrYdgguVZKeCsrVb9XEs?utm_source=generator');
+new BPMvids('lz1', 'lana-videos/lz-blue-waves-med.mp4', 'mp4', 'Way I Go - by Gordi', 'https://open.spotify.com/embed/track/5fMTQPtPqEGNCI9gDGTruc?utm_source=generator');
+new BPMvids('lz2', 'lana-videos/lz-pink-road-fast.mp4', 'mp4', 'Cosmic Girl - by Jamiroquai', 'https://open.spotify.com/embed/track/2fiRJjWb9uk21Gva6oHpKs?utm_source=generator');
+new BPMvids('lz3', 'lana-videos/lz-purple-chill-med.mp4', 'mp4', 'Dog Days are Over - by Florence + The Machine', 'https://open.spotify.com/embed/track/1YLJVmuzeM2YSUkCCaTNUB?utm_source=generator');
+new BPMvids('lz4', 'lana-videos/lz-red-dramatic-med.mp4', 'mp4', 'I Need Never Get Old - by Nathaniel Rateliff & The Night Sweats', 'https://open.spotify.com/embed/track/6YfEvtwpQwGAWZBWzNmoIw?utm_source=generator');
+new BPMvids('lz5', 'lana-videos/lz-yellow-spiral-fast.mp4', 'mp4', 'Peaceful Life - by Guts feat. Lorine Chia', 'https://open.spotify.com/embed/track/1oqcT3rKnuyGf7gcQU8IXx?utm_source=generator');
+new BPMvids('ev1', 'errolvideos/ev-colors-med.mp4', 'mp4', 'I Wanna Dance with Somebod - by Whitney Houston', 'https://open.spotify.com/embed/track/2tUBqZG2AbRi7Q0BIrVrEj?utm_source=generator');
+new BPMvids('ev2', 'errolvideos/ev-metal-med.mp4', 'mp4', 'Enter Sandman - by Metallica', 'https://open.spotify.com/embed/track/3VqHuw0wFlIHcIPWkhIbdQ?utm_source=generator');
+new BPMvids('ev3', 'errolvideos/ev-piano-slow.mp4', 'mp4', '1812 Overture - by Tchaikosky', 'https://open.spotify.com/embed/track/6oWacAPUt8LMXqRkEk2MNg?utm_source=generator');
+new BPMvids('ev4', 'errolvideos/ev-tunnel-med.mp4', 'mp4', 'Suavemente - by Elvis Crespo', 'https://open.spotify.com/embed/track/7cpFmkNmh3MM0WqXPSbs9f?utm_source=generator');
+new BPMvids('ev5', 'errolvideos/ev-waves-fast.mp4', 'mp4', 'Cool Down - by Kolohe Kai', 'https://open.spotify.com/embed/track/6uJaTP7EbaHXJ5PM09s0uV?utm_source=generator');
+new BPMvids('ns1', 'natalie-videos/ns-aurora-slow.mp4', 'mp4', 'Step Out - by Jose Gonzalez', 'https://open.spotify.com/embed/track/0P0vjAUzsleEw8X4aZcOrg?utm_source=generator');
+new BPMvids('ns2', 'natalie-videos/ns-blue-abstract-med.mp4', 'mp4', 'The Mist - by Nine Sparks Riot', 'https://open.spotify.com/embed/track/70LntKgk4Uvlf9428pkvtH?utm_source=generator');
+new BPMvids('ns3', 'natalie-videos/ns-ferris-fast.mp4', 'mp4', 'Float - by Janelle Monae', 'https://open.spotify.com/embed/track/2JIY6nN5kkkfNz0TckPqYu?utm_source=generator');
+new BPMvids('ns4', 'natalie-videos/ns-metro-fast.mp4', 'mp4', 'Whats Up? - by FJORA', 'https://open.spotify.com/embed/track/2to3xwIngqZI0PTKTcteTv?utm_source=generator');
+new BPMvids('ns5', 'natalie-videos/ns-watch-slow.mp4', 'mp4', 'Exit Music For a Film - by Radiohead', 'https://open.spotify.com/embed/track/0z1o5L7HJx562xZSATcIpY?utm_source=generator');
 
 
 //This is the array that holds a copy of the original array so that when the splice method in the
@@ -74,11 +75,14 @@ function renderBpmVideos(){
   vid1.name = video1.name;
   vid1.song = video1.song;
   vid1.type = video1.type;
+  vid1.spotifySrc = video1.spotifySrc;
 
   vid2.src = video2.link;
   vid2.song = video2.song;
   vid2.name = video2.name;
   vid2.type = video2.type;
+  vid2.spotifySrc = video2.spotifySrc;
+
 }
 
 //This is the event listener for the videos. ** Note that it is not in a function so it adds the event
@@ -94,13 +98,16 @@ function handleClick(event){
   let userChoice = event.target;
   let closestVideo = userChoice.closest('div').querySelector('video');
   let closestVideoSong = closestVideo.song;
-  console.log('closest video', closestVideo.song);
+  let closestSpotify = closestVideo.spotifySrc;
+  let closestName = closestVideo.name;
+  let songAndSpotify = {song: closestVideoSong, spotifySrc: closestSpotify, name: closestName};
+  console.log('song and spotify src object', songAndSpotify);
 
   //This for loop, loops through the entire bpmCopy array and sets userChoice and sends it to the
   //userChoiceVideos array
   for (let i = 0; i < bpmCopy.length; i++) {
-    if (closestVideoSong === bpmCopy[i].song){
-      userChoiceVideos.push(closestVideoSong);
+    if (songAndSpotify.song === bpmCopy[i].song){
+      userChoiceVideos.push(songAndSpotify);
       console.log('the whole user choice array', userChoiceVideos);
       break;
     }
