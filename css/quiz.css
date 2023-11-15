@@ -5,7 +5,7 @@
 }
 
 h1 {
-  color: #d3c7b4
+  color: #d3c7b4;
   font-family: 'Righteous', sans-serif;
   font-size: 2em;
   padding: 0.25em;
@@ -57,88 +57,7 @@ img {
   background-color: transparent;
 }
 
-.left-col,
-.right-col {
-  background-color: transparent;
-  padding: 20px;
-}
 
-.left-col {
-  animation: fadeInOut 8s infinite;
-  border-radius: 10px;
-  float: left;
-  width: 50%;
-  margin-left: 200px;
-}
-
-.left-col h2 {
-  /* animation: fadeInOut 8s infinite; */
-  border-radius: 10px;
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #d3c7b4;
-  line-height: 2;
-}
-
-#relax {
-  animation-delay: 0s;
-  border-radius: 10px;
-  opacity: 95%;
-  padding-left: 20px;
-}
-
-#take {
-  animation-delay: 2s;
-  border-radius: 10px;
-  opacity: 95%;
-  padding-left: 20px;
-}
-
-#enjoy {
-  animation-delay: 4s;
-  border-radius: 10px;
-  opacity: 95%;
-  padding-left: 20px;
-}
-
-
-@keyframes fadeInOut {
-  0%, 100% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-}
-
-.right-col {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 100px;
-}
-
-.right-col a {
-  background-color: transparent;
-}
-
-.right-col img {
-  max-width: 100%;
-  height: auto;
-  background-color: transparent;
-}
-
-/* .room {
-  height: 100vh;
-  width: 100%;
-  background-image: url(cozy-room.png);
-  background-size: cover;
-  background-position: center;
-  position: relative; /* Change to relative instead of absolute */
-  /* opacity: 75%;
-} */ */
 
 .room p {
   position: absolute;

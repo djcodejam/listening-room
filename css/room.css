@@ -6,14 +6,20 @@
 h2 {
   font-family: 'Righteous', sans-serif;
   font-size: 1.5em;
-  padding: 0.25em;
+  padding: 2em;
 }
 
 p {
   font-family: 'Righteous', sans-serif;
   font-size: 0.9em;
-  padding: 0.25em;
+  padding: 1em;
 }
+
+/* #listening-room{
+  font-family: 'Righteous', sans-serif;
+  font-size: 0.9em;
+  padding: 1em;
+} */
 
 body {
   font-family: Arial, sans-serif;
