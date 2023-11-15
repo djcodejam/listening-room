@@ -17,39 +17,31 @@ console.log(storedArray);
 
 
 function renderSongsListeningRoom() {
+  let videoPlayer = document.getElementById('videoPlayer');
   let songsContainer = document.getElementById('consolePlaylist');
   let playlist = document.createElement('ul');
   songsContainer.appendChild(playlist);
 
   for (let i = 0; i < storedArray.length; i++) {
     let songList = document.createElement('li');
+    let playButton = document.createElement('button');
+    playButton.textContent = 'Play Song';
+    // eslint-disable-next-line no-inner-declarations
+    function playSong(){
+      videoPlayer.src = storedArray[i].spotifySrc;
+    }
+    playButton.addEventListener('click', playSong);
+    playButton.id = storedArray[i].name;
+    playlist.appendChild(playButton);
+    songList.textContent = storedArray[i].song;
     playlist.appendChild(songList);
-    songList.textContent = storedArray[i];
+
   }
-
-  // // Check if the message is an object and stringify it
-  // if (typeof playlist === 'object') {
-  //   playlist = JSON && JSON.stringify ? JSON.stringify(playlist) : playlist;
-  // }
-
-  // // Append the message to the textarea
-  // logTextarea.value += playlist + '\n';
 }
 
-// Store the original console.log function
-// let originalConsoleLog = console.log;
 
-// // Override console.log to display messages in the textarea
-// console.log = function () {
-//   for (let i = 0; i < arguments.length; i++) {
-//     appendToConsole(arguments[i]);
-//   }
 
-//   // Call the original console.log function to output messages to the browser console
-//   if (typeof originalConsoleLog === 'function') {
-//     originalConsoleLog.apply(console, arguments);
-//   }
-//   console.log(storedArray);
+
 renderSongsListeningRoom();
 
 
