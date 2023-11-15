@@ -1,35 +1,36 @@
-Software Requirements
-Vision
-Minimum Length: 3-5 sentences
+# Software Requirements
 
-What is the vision of this product?
+## Vision:
 
-What pain point does this project solve?
+User experiences a listening room based on media selections they are feeling aligned with.
+Pain point this project solves:
 
-Why should we care about your product?
+Entertainment or relaxation for the user.
+Care about this product because:
 
-Scope (In/Out)
-IN - What will your product do
-Describe the individual features that your product will do.
-High overview of each. Only need to list 4-5
-Example:
-The web app will provide information to the users about all the different Cat Cafe’s in the area
-The web app will provide both walking and driving directions to each of the destinations
-Users will be able to “Star” their favorite shops.
-Each shop will contain reviews of the customer’s experiences
-OUT - What will your product not do.
-These should be features that you will make very clear from the beginning that you will not do during development. These should be limited and very few. Pick your battles wisely. This should only be 1 or 2 things. Example: My website will never turn into an IOS or Android app.
-Minimum Viable Product vs
-What will your MVP functionality be?
+Research has shown that listening to music can reduce anxiety, blood pressure, and pain as well as improve sleep quality, mood, mental alertness, and memory.
+Source: [John Hopkins Medicine](https://www.hopkinsmedicine.org/health/wellness-and-prevention/keep-your-brain-young-with-music#:~:text=Research%20has%20shown%20that%20listening,%2C%20mental%20alertness%2C%20and%20memoryLinks) to an external site..
 
-What are your stretch goals?
+## IN Scope - What our product will do:
 
-Stretch
-What stretch goals are you going to aim for?
+Stimulate the user via visual and audio media
+Provide an opportunity for the user to interact with media by choosing their preferred media
+Provide the user an opportunity to consider their feelings and mood and select "vibes" that align
+Expose the user to new music or at minimum music others believe would be pleasing to them.
 
-Functional Requirements
-List the functionality of your product. This will consist of tasks such as the following:
+## OUT of scope - What our product will not do:
 
-An admin can create and delete user accounts
-A user can update their profile information
-A user can search all of the products in the inventory
+Medically treat the user's health or mood issues
+
+## Our MVP functionality will be:
+
+* the user will understand the site and be invited to the listening room experience
+* the user will choose a visual representation (image(s) or video(s)) that corresponds to a mood they are currently in or want to experience
+* the site will recommend a song for the listener to enjoy based off of songs with a range of beats per minute that align to the images the user selected
+* the user will then be able to listen to a song that is the result of their selections or recommended a playlist they can play songs from that correspond to their selection
+
+## Our stretch goals will be:
+
+* the user will then choose a visual representation (image or video) that corresponds to a genre of music they are in the mood for
+* user shares moods or feedback on songs they are presented in the listening room
+* user receives a playlist verses a single song in the listening room
