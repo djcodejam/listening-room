@@ -83,6 +83,31 @@ body {
 }
 
 #expandedImg {
-  width: 40%;
+  width: 70%;
   border-radius: 10px;
+}
+
+#consolePlaylist li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid white;
+}
+
+button {
+  border-radius: 10px;
+  padding: 0.50em;
+}
+
+
+#consolePlaylist button {
+  background-color: #c8c33e;
+  color: white;
+  margin-left: 10px;
+}
+
+#consolePlaylist button:hover {
+  background-color: #e0db4f;
 }

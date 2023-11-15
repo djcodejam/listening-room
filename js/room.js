@@ -23,7 +23,14 @@ function renderSongsListeningRoom() {
   songsContainer.appendChild(playlist);
 
   for (let i = 0; i < storedArray.length; i++) {
-    let songList = document.createElement('li');
+    let listItem = document.createElement('li');
+    // Create div container to pair song to play button
+    let containerDiv = document.createElement('div');
+    // Add class ID for styling later
+    containerDiv.classList.add('playlist-item');
+
+
+    let songList = document.createElement('span');
     let playButton = document.createElement('button');
     playButton.textContent = 'Play Song';
     // eslint-disable-next-line no-inner-declarations
@@ -32,10 +39,11 @@ function renderSongsListeningRoom() {
     }
     playButton.addEventListener('click', playSong);
     playButton.id = storedArray[i].name;
-    playlist.appendChild(playButton);
+    containerDiv.appendChild(songList);
     songList.textContent = storedArray[i].song;
-    playlist.appendChild(songList);
-
+    containerDiv.appendChild(playButton);
+    listItem.appendChild(containerDiv);
+    playlist.appendChild(listItem);
   }
 }
 
