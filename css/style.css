@@ -1,9 +1,11 @@
 * {
-  background-color: #2779a7;
-  color: white;
+  background-color:#3b4c5a;
+  color:
+  #d3c7b4;
 }
 
 h1 {
+  color: #d3c7b4
   font-family: 'Righteous', sans-serif;
   font-size: 2em;
   padding: 0.25em;
@@ -12,7 +14,7 @@ h1 {
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 50px;
+
 }
 
 img {
@@ -62,27 +64,49 @@ img {
 }
 
 .left-col {
+  animation: fadeInOut 8s infinite;
+  border-radius: 10px;
   float: left;
   width: 50%;
   margin-left: 200px;
 }
 
 .left-col h2 {
-  background-color: transparent;
-  font-size: 3em;
+  animation: fadeInOut 8s infinite;
+  font-size: 2.5em;
   font-weight: bold;
-  color: #477fb8;
+  color: #d3c7b4;
   line-height: 2;
-  line-height: 2;
-  opacity: 0;
-  animation: fadeInOut 4s infinite;
 }
+
+#relax {
+  animation-delay: 0s;
+  border-radius: 10px;
+  opacity: 950%;
+  padding-left: 20px;
+
+}
+
+#take {
+  animation-delay: 2s;
+  border-radius: 10px;
+  opacity: 95%;
+  padding-left: 20px;
+}
+
+#enjoy {
+  animation-delay: 4s;
+  border-radius: 10px;
+  opacity: 95%;
+  padding-left: 20px;
+}
+
 
 @keyframes fadeInOut {
   0%, 100% {
     opacity: 0;
   }
-  50% {
+  90% {
     opacity: 1;
   }
 }
@@ -110,7 +134,6 @@ img {
   height: 100vh;
   width: 100%;
   background-image: url(cozy-room.png);
-  border-radius: 10px;
   background-size: cover;
   background-position: center;
   position: relative; /* Change to relative instead of absolute */
@@ -174,6 +197,6 @@ button {
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
-  background-color: #409451;
+  background-color: #3b4c5a;
   color: white;
 }
