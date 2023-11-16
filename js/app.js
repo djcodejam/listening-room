@@ -131,10 +131,29 @@ function removeEventListener(){
 }
 
 
-function redirectToListeningRoom(){
-  const host = window.location.host ;
-  window.location.href = `http://${host}/listening.html` || 'https://djcodejam.github.io/listening-room/listening.html';
+function redirectToListeningRoom() {
+  const host = window.location.host;
+  const redirectUrl = `http://${host}/listening.html`;
+
+  // Using if statement
+  if (redirectUrl) {
+    window.location.href = redirectUrl;
+  } else {
+    window.location.href = 'https://djcodejam.github.io/listening-room/listening.html';
+  }
+
+  // Using ternary operator
+  // window.location.href = redirectUrl ? redirectUrl : 'https://djcodejam.github.io/listening-room/listening.html';
+
+  // Shortened version using nullish coalescing operator (available in ES2020 and later)
+  // window.location.href = redirectUrl ?? 'https://djcodejam.github.io/listening-room/listening.html';
 }
+
+
+// function redirectToListeningRoom(){
+//   const host = window.location.host ;
+//   window.location.href = `http://${host}/listening.html` || 'https://djcodejam.github.io/listening-room/listening.html';
+// }
 
 
 renderBpmVideos();
