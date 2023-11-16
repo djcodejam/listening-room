@@ -4,12 +4,10 @@ let img2 = document.getElementById('djImageMove2');
 let img3 = document.getElementById('djImageMove3');
 let img4 = document.getElementById('djImageMove4');
 
-let button = document.getElementById('dropthebeat');
-
-button.addEventListener('click', animate);
-
 let button = document.getElementById('dropTheBeat');
+
 button.addEventListener('click', animate);
+
 
 let positionX = -300;
 let positionY = -500;
