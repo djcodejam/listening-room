@@ -42,6 +42,7 @@ body {
 }
 
 .navbar ul li {
+  font-family: Arial, sans-serif;
   list-style: none;
   display: inline-block;
   margin: 0 15px;
