@@ -34,6 +34,7 @@ function renderSongsListeningRoom() {
     playButton.textContent = 'Load Song';
     // eslint-disable-next-line no-inner-declarations
     function playSong(){
+      videoPlayer.removeAttribute('hidden');
       videoPlayer.src = storedArray[i].spotifySrc;
     }
     playButton.addEventListener('click', playSong);
