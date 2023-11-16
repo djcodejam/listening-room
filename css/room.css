@@ -90,10 +90,22 @@ body {
 }
 
 #expandedImg {
+  position: relative; /* Set relative positioning on the container */
   width: 70%;
   border-radius: 10px;
   border: 1px solid gray;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#videoPlayer {
+  position: absolute; /* Set absolute positioning on the iframe */
+  top: 45%; /* Center the iframe vertically */
+  left: 50%; /* Center the iframe horizontally */
+  transform: translate(-50%, -50%); /* Center the iframe precisely */
+  border-radius: 12px;
+  margin-bottom: 0;
+  overflow: hidden;
+  height: 7%;
 }
 
 #consolePlaylist li {
@@ -123,11 +135,3 @@ button {
   background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(129,176,218,1) 100%);
 }
 
-/* #videoPlayer {
-
-  border-radius: 12px;
-  top: 1em;
-  right: 1em;
-  height: 150px;
-  position: absolute;
-} */
