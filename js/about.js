@@ -1,4 +1,7 @@
 let img = document.getElementById('djImageMove');
+let button = document.getElementById('dropthebeat');
+
+button.addEventListener('click', animate);
 
 let positionX = 50;
 let positionY = 50;
@@ -13,4 +16,3 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-animate();

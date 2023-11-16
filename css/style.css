@@ -4,13 +4,6 @@
   #d3c7b4;
 }
 
-h1 {
-  color: #f3a282
-  font-family: 'Righteous', sans-serif;
-  font-size: 2em;
-  padding: 0.25em;
-}
-
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -64,7 +57,6 @@ img {
 }
 
 .left-col {
-  animation: fadeInOut 8s infinite;
   border-radius: 10px;
   float: left;
   width: 50%;
@@ -72,47 +64,64 @@ img {
 }
 
 .left-col h2 {
-  /* animation: fadeInOut 8s infinite; */
+  background-color: #3b4c5a;
   border-radius: 10px;
   color: #d3c7b4;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.5;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#relax, #take, #enjoy {
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+  margin: 8px;
+  opacity: 0;
+  padding-left: 20px;
 }
 
 #relax {
   animation-delay: 0s;
-  border-radius: 10px;
-  margin: 5px;
-  opacity: 95%;
-  padding-left: 20px;
 }
-
 #take {
   animation-delay: 2s;
-  border-radius: 10px;
-  margin: 8px;
-  opacity: 95%;
-  padding-left: 20px;
 }
-
 #enjoy {
   animation-delay: 4s;
-  border-radius: 10px;
-  margin: 8px;
-  opacity: 95%;
-  padding-left: 20px;
 }
 
-
-@keyframes fadeInOut {
-  0%, 100% {
+@keyframes fadeIn {
+  0% {
     opacity: 0;
   }
-  90% {
+  40% {
+    opacity: .4;
+  }
+  60% {
+    opacity: .6;
+  }
+  100% {
     opacity: 1;
   }
 }
+/*
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: .4;
+  }
+  60% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
 
 .right-col {
   width: 50%;
