@@ -37,7 +37,7 @@ new BPMvids('lz2', 'lana-videos/lz-pink-road-fast.mp4', 'mp4', 'Cosmic Girl - by
 new BPMvids('lz3', 'lana-videos/lz-purple-chill-med.mp4', 'mp4', 'Dog Days are Over - by Florence + The Machine', 'https://open.spotify.com/embed/track/1YLJVmuzeM2YSUkCCaTNUB?utm_source=generator');
 new BPMvids('lz4', 'lana-videos/lz-red-dramatic-med.mp4', 'mp4', 'I Need Never Get Old - by Nathaniel Rateliff & The Night Sweats', 'https://open.spotify.com/embed/track/6YfEvtwpQwGAWZBWzNmoIw?utm_source=generator');
 new BPMvids('lz5', 'lana-videos/lz-yellow-spiral-fast.mp4', 'mp4', 'Peaceful Life - by Guts feat. Lorine Chia', 'https://open.spotify.com/embed/track/1oqcT3rKnuyGf7gcQU8IXx?utm_source=generator');
-new BPMvids('ev1', 'errolvideos/ev-colors-med.mp4', 'mp4', 'I Wanna Dance with Somebod - by Whitney Houston', 'https://open.spotify.com/embed/track/2tUBqZG2AbRi7Q0BIrVrEj?utm_source=generator');
+new BPMvids('ev1', 'errolvideos/ev-colors-med.mp4', 'mp4', 'I Wanna Dance with Somebody - by Whitney Houston', 'https://open.spotify.com/embed/track/2tUBqZG2AbRi7Q0BIrVrEj?utm_source=generator');
 new BPMvids('ev2', 'errolvideos/ev-metal-med.mp4', 'mp4', 'Enter Sandman - by Metallica', 'https://open.spotify.com/embed/track/3VqHuw0wFlIHcIPWkhIbdQ?utm_source=generator');
 new BPMvids('ev3', 'errolvideos/ev-piano-slow.mp4', 'mp4', '1812 Overture - by Tchaikosky', 'https://open.spotify.com/embed/track/6oWacAPUt8LMXqRkEk2MNg?utm_source=generator');
 new BPMvids('ev4', 'errolvideos/ev-tunnel-med.mp4', 'mp4', 'Suavemente - by Elvis Crespo', 'https://open.spotify.com/embed/track/7cpFmkNmh3MM0WqXPSbs9f?utm_source=generator');
