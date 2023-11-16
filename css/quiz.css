@@ -9,6 +9,15 @@ body {
   text-align: center;
 }
 
+p {
+  color: #e1d9d0;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+}
+
+
 .navbar {
   width: 88%;
   margin: auto;
@@ -64,6 +73,19 @@ body {
   color:  #d18466;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: bold;
+  padding: 10px;
+}
+
+.room p {
+  position: absolute;
+  z-index: 2; /* Increase z-index to place it above the videos */
+  top: 30%; /* Adjust the top position to center vertically */
+  left: 50%; /* Adjust the left position to center horizontally */
+  transform: translate(-50%, -50%);
+  background-color: #3b4c5a;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 video.overlay-1,
@@ -74,6 +96,7 @@ video.overlay-2 {
   z-index: 1;
   background-color: transparent;
 }
+
 
 video.overlay-1 {
   left: 30%; /* Adjust the left position for the first image */
@@ -103,14 +126,20 @@ video.overlay-2 {
 
 
 button {
+  border-radius: 10px;
   display: inline-block;
   padding: 10px 20px;
   font-size: 1em;
   text-align: center;
   text-decoration: none;
-  border-radius: 10px;
-  background-color: #3b4c5a;
-  color: #d3c7b4;
+
+  background: rgb(0,2,10);
+  background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(129,176,218,1) 100%);
+  /* background-color: #3b4c5a;
+  color: #d3c7b4; */
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 button:hover {
