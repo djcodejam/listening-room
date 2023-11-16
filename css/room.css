@@ -11,9 +11,11 @@ h2 {
 }
 
 p {
+  color: #e1d9d0;
   font-family: 'Righteous', sans-serif;
-  font-size: 0.9em;
-  padding: 0.5em;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
 }
 
 body {
@@ -56,7 +58,6 @@ body {
   width: 10%;
   padding: 10px;
 }
-
 
 .column img {
   opacity: 0.8;

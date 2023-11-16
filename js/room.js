@@ -31,7 +31,7 @@ function renderSongsListeningRoom() {
     // Used span so the song and button are inline
     let songList = document.createElement('span');
     let playButton = document.createElement('button');
-    playButton.textContent = 'Play Song';
+    playButton.textContent = 'Load Song';
     // eslint-disable-next-line no-inner-declarations
     function playSong(){
       videoPlayer.src = storedArray[i].spotifySrc;
