@@ -1,16 +1,19 @@
 .row {
   margin: 8px - 20px;
+  position: relative;
 }
 
 .column {
   float: left;
-  width: 25%
+  width: 25%;
+  position: relative;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
-
+  position: relative;
+  display: none;
 }
 
 .about-section {
@@ -63,6 +66,10 @@ button {
   .column {
     width: 100%;
   }
+}
+
+button {
+  align-self: center;
 }
 
 img {
