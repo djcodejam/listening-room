@@ -133,7 +133,7 @@ function removeEventListener(){
 
 function redirectToListeningRoom(){
   const host = window.location.host ;
-  window.location.href = `http://${host}/listening.html`;
+  window.location.href = `http://${host}/listening.html` || 'https://djcodejam.github.io/listening-room/listening.html';
 }
 
 
