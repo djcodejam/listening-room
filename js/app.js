@@ -133,13 +133,13 @@ function removeEventListener(){
 
 function redirectToListeningRoom() {
   const host = window.location.host;
-  const redirectUrl = `http://${host}/listening.html`;
+  const redirectUrl = 'https://djcodejam.github.io/listening-room/listening.html';
 
   // Using if statement
   if (redirectUrl) {
-    window.location.href = redirectUrl;
-  } else {
     window.location.href = 'https://djcodejam.github.io/listening-room/listening.html';
+  } else {
+    window.location.href = `http://${host}/listening.html`;
   }
 
   // Using ternary operator
@@ -148,6 +148,8 @@ function redirectToListeningRoom() {
   // Shortened version using nullish coalescing operator (available in ES2020 and later)
   // window.location.href = redirectUrl ?? 'https://djcodejam.github.io/listening-room/listening.html';
 }
+
+// ChatGPT helped us fix this function!!
 
 
 // function redirectToListeningRoom(){
