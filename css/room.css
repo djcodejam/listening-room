@@ -6,8 +6,13 @@
 h2 {
   color: #d18466;
   font-family: 'Righteous', sans-serif;
-  font-size: 1.5em;
   padding: 0.5em;
+  font-size: 2.25em;
+  background-color: #3b4c5a;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  padding: 10px;
 }
 
 p {
@@ -19,7 +24,6 @@ p {
 }
 
 body {
-  font-family: Arial, sans-serif;
   text-align: center;
   margin: 50px;
 }
@@ -104,6 +108,7 @@ body {
 button {
   border-radius: 10px;
   padding: 0.50em;
+
 }
 
 
@@ -114,5 +119,15 @@ button {
 }
 
 #consolePlaylist button:hover {
-  background-color: #712404;
+  background: rgb(0,2,10);
+  background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(129,176,218,1) 100%);
 }
+
+/* #videoPlayer {
+
+  border-radius: 12px;
+  top: 1em;
+  right: 1em;
+  height: 150px;
+  position: absolute;
+} */
