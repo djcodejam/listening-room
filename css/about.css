@@ -10,7 +10,7 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
-  
+
 }
 
 .about-section {
@@ -33,10 +33,14 @@ p {
 }
 
 button {
-  text-align:center;
-  font-size:larger;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
   background: rgb(0,2,10);
-background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(129,176,218,1) 100%);
+  background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(129,176,218,1) 100%);
 }
 .container::after, .row::after {
   content: "";
@@ -47,7 +51,6 @@ background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(129,176,218,1) 100%)
 .title {
   color: grey;
   text-align: center;
-  font
 }
 
 @media screen and (max-width: 900px) {
@@ -61,3 +64,8 @@ background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(129,176,218,1) 100%)
     width: 100%;
   }
 }
+
+img {
+  position: relative;
+}
+
